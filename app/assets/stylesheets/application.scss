@@ -10,3 +10,20 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+.container {
+	padding: 40px;
+}
+
+.header {
+	text-align: center;
+}
+
+.spacer {
+	padding-top: 40px;
+}
+
+.spacer-line {
+	padding-top: 40px;
+	border-bottom: 1px solid gray;
+}
