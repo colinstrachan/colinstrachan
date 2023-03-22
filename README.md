@@ -1,4 +1,4 @@
-Product Marketing Manager at [https://www.getmaintainx.com/](MaintainX), and formerly of [https://www.coveo.com/](Coveo).
+Product Marketing Manager at [MaintainX](https://www.getmaintainx.com/), and formerly of [Coveo](https://www.coveo.com).
 
 Also fluent in **Rails 7**, **React.js** and **GraphQL**... because coding is fun.
 
