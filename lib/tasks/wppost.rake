@@ -10,7 +10,7 @@ namespace :wordpress do
   desc "TODO"
   task post: :environment do
 
-    auth = "Basic " + "Y29saW5zdHJhY2hhbjpKMmZKIFVqeTEgczh3ViBUY0J1IDVCN0YgWkNueg=="
+    auth = "Basic " + ENV['WPAPPPASS']
     
     url = URI("https://netflexkids.com/wp-json/wp/v2/posts")
 

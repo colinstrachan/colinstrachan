@@ -10,7 +10,7 @@ namespace :netflex do
   desc "TODO"
   task seed: :environment do
 
-    APIKEY = "AIzaSyD5IsRjwglwfAdzmxjfYXmIHc2syFe4vLE"
+    APIKEY = ENV['YTAPIKEY']
     CHANNELID = "UC2YBT7HYqCbbvzu3kKZ3wnw"
     
     url = URI("https://www.googleapis.com/youtube/v3/search?order=date&part=snippet&channelId=#{CHANNELID}&maxResults=25&key=#{APIKEY}")
@@ -34,7 +34,7 @@ namespace :netflex do
     end
 
     def create_draft(posttitle, postcontent)
-      auth = "Basic " + "Y29saW5zdHJhY2hhbjpKMmZKIFVqeTEgczh3ViBUY0J1IDVCN0YgWkNueg=="
+      auth = "Basic " + ENV['WPAPPPASS']
     
       url = URI("https://netflexkids.com/wp-json/wp/v2/posts")
 
@@ -47,6 +47,6 @@ namespace :netflex do
       request["Content-Type"] = 'application/json'
       request.body = {"title": posttitle, "status": "draft", "format": "video", "content": postcontent}.to_json  
     end
-    
+
   end
 end
