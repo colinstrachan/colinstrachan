@@ -47,7 +47,6 @@ namespace :netflex do
       request["Content-Type"] = 'application/json'
       request.body = {"title": posttitle, "status": "draft", "format": "video", "content": postcontent}.to_json  
     end
-
-    end
+    
   end
 end
