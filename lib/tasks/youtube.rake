@@ -8,7 +8,7 @@ require 'uri'
 
 namespace :netflex do
   desc "TODO"
-  task seed: :environment do
+  task youtube: :environment do
 
     APIKEY = ENV['YTAPIKEY']
     CHANNELID = "UC2YBT7HYqCbbvzu3kKZ3wnw"
