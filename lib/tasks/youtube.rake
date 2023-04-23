@@ -46,7 +46,7 @@ namespace :netflex do
       request = Net::HTTP::Post.new(url, {'Authorization' => auth})
 
       request["Content-Type"] = 'application/json'
-      request.body = {"title": posttitle, "status": "draft", "format": "video", "content": "https://www.youtube.com/watch?v=#{postcontent[0]} - #{postcontent[1]}".to_json  
+      request.body = {"title": posttitle, "status": "draft","format": "video","content": "https://www.youtube.com/watch?v=#{postcontent[0]}\n#{postcontent[1]}"}.to_json  
     end
 
   end
