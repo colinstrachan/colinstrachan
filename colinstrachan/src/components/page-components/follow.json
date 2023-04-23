@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_page_components_follows",
+  "info": {
+    "displayName": "Follow"
+  },
+  "options": {},
+  "attributes": {
+    "socials": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::social.social"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

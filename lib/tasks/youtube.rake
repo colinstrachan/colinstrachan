@@ -29,7 +29,8 @@ namespace :netflex do
       next if item['id']['videoId'].nil?
       puts item['snippet']['publishedAt'].to_date.to_s + " | " + item['snippet']['title'] + " | " + item['id']['videoId']
       if item['snippet']['publishedAt'].to_date.to_s == DateTime.now.to_date.strftime("%Y-%m-%d").to_s
-        create_draft(item['snippet']['title'], item['id']['videoId'])
+        create_draft(item['snippet']['title'], [item['id']['videoId'], item[
+          'snippet']['thumbnails']['high']['url']])
       end
     end
 
@@ -45,7 +46,7 @@ namespace :netflex do
       request = Net::HTTP::Post.new(url, {'Authorization' => auth})
 
       request["Content-Type"] = 'application/json'
-      request.body = {"title": posttitle, "status": "draft", "format": "video", "content": postcontent}.to_json  
+      request.body = {"title": posttitle, "status": "draft", "format": "video", "content": "https://www.youtube.com/watch?v=#{postcontent[0]} - #{postcontent[1]}".to_json  
     end
 
   end

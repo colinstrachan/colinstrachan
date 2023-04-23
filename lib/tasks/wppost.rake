@@ -22,5 +22,6 @@ namespace :wordpress do
 
     request["Content-Type"] = 'application/json'
     request.body = {"title": "test api post", "status": "draft", "format": "video", "content": "api test"}.to_json
+    puts request.body
   end
 end

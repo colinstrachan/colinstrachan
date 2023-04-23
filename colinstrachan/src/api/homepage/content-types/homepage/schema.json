@@ -1,22 +1,40 @@
 {
-  "kind": "collectionType",
+  "kind": "singleType",
   "collectionName": "homepages",
   "info": {
     "singularName": "homepage",
     "pluralName": "homepages",
-    "displayName": "Homepage",
-    "description": ""
+    "displayName": "Homepage"
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "Bio": {
-      "type": "richtext"
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-components.hero"
     },
-    "Name": {
-      "type": "string"
+    "bio": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page-components.bio"
+    },
+    "projects": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project.project"
+    },
+    "skills": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::skill.skill"
+    },
+    "articles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::article.article"
     }
   }
 }
