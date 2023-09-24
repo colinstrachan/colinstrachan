@@ -11,8 +11,73 @@
 @import "components/index";
 @import "pages/index";
 
-.container {
-	padding: 40px;
+body {
+	font-family: 'Manrope';
+}
+
+h1 {
+	font-family: 'Manrope';
+	font-weight: 800;
+	font-size: 60px;
+	color: #efefef;
+}
+
+h2 {
+	font-family: 'Manrope';
+	font-weight: 800;
+	font-size: 32px;
+	color: #3366dd;
+}
+
+h3 {
+	font-family: 'Manrope';
+	font-weight: 800;
+	font-size: 28px;
+	color: #444444;
+}
+
+p {	
+	font-family: 'Manrope';
+	font-weight: 300;
+	color: #efefef;
+}
+
+a {
+	text-decoration: none;
+	font-size: 20px;
+	color: #efefef;
+}
+
+.navbar {
+	position: relative;
+	background-color: transparent;
+	height: 80px;
+}
+
+.navbar-logo img {
+	width: 175px;
+	height: auto;
+}
+
+.nav-link {
+	color: #efefef;
+}
+
+.navbar-toggler-icon {
+	color: #efefef;
+}
+
+.container-fluid {
+	width: 60%;
+}
+
+.subhead {
+	font-size: 30px;
+}
+
+.main-container {
+	margin-top: -80px;
+	width: 100%;
 }
 
 .header {
@@ -26,4 +91,111 @@
 .spacer-line {
 	padding-top: 40px;
 	border-bottom: 1px solid gray;
+}
+
+.hero {
+	width: 100%;
+	min-height: 100vh;
+	background-size: cover;
+	background-position: top center;
+}
+
+.hero-text {
+	padding: 20vh 0vh 15vh 0vh;
+	width: 60%;
+	margin: 0 auto;
+}
+
+.hero-button-link {
+	max-width: 250px;
+}
+
+.hero-button {
+	padding: 0px 60px 0px 60px;
+	background-color: #3366dd;
+	font-color: #efefef;
+	text-align: center;
+	font-size: 28px;
+	p {
+		font-color: #efefef;
+		font-weight: 600;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	max-width: 300px;
+}
+
+.social-icon {
+	margin: 3px 0px 3px 0px;
+	width: 40px;
+	height: 40px;
+	opacity: 0.7;
+	&:hover {
+		opacity: 0.9;
+		color: #3366dd;
+	}
+}
+
+.bio-wrapper {
+	width: 60%;
+	margin: 0 auto;
+	padding: 10vh 0vh 15vh 0vh;
+}
+
+.footer {
+	background-color: black;
+	width: 100%;
+}
+
+.footer-wrapper {
+	width: 60%;
+	margin: 0 auto;
+	padding: 10vh 0vh 15vh 0vh;
+}
+
+.footer-legal {
+	margin-top: 30px;
+	text-align: center;
+	color: #dddddd;
+}
+
+.bio-image img {
+	width: 80%;
+	border-radius: 50%;
+}
+
+.bio-text p {
+	color: #888888;
+	font-size: 18px;
+}
+
+@media only screen and (max-width: 991px) {
+	.hero-text {
+		width: 80%;
+	}
+	.bio-wrapper {
+		width: 80%;
+	}
+	h1 {
+		font-size: 48px;
+	}
+	h2 {
+		font-size: 28px;
+	}
+	h3 {
+		font-size: 24px;
+	}
+	.subhead {
+		font-size: 22px;
+	}
+	.hero {
+		background-position: top;
+	}
+	.bio-image {
+		text-align: center;
+		padding-bottom: 40px;
+	}
+	.container-fluid {
+		width: 90%;
+	}
 }

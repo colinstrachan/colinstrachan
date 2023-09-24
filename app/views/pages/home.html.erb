@@ -1,14 +1,38 @@
-<div class="container">
-	<div class="header">
-		<h1><b>Colin Strachan</b></h1>
-		<p>Montreal</p>
-		<div class="spacer"></div>
-		<p>Follow me:</p>
-		<%= link_to "LinkedIn", "https://www.linkedin.com/in/colinstrachan" %> |
-		<%= link_to "Twitter", "https://www.twitter.com/colinstrachan" %> |
-		<%= link_to "GitHub", "https://www.github.com/colinstrachan" %>
-		<div class="spacer-line"></div>
-		<div class="spacer"></div>
-		<p>Full website coming soon.</p>
+<div class="main-container">
+	<div class="hero" style="background-image: url('http://localhost:1337<%= @hero[:cover] %>');">
+		<div class="hero-text">
+			<h1><%= @hero[:headline] %></h1>
+			<div class="spacer"></div>
+			<p class="subhead"><%= @hero[:subhead] %></p>
+			<div class="spacer"></div>
+			<%= link_to @hero[:url], class: "hero-button-link" do %>
+				<div class="hero-button">
+					<p><%= @hero[:cta] %></p>
+				</div>
+			<% end %>
+			<div class="spacer"></div>
+			<%= link_to @socials[:linkedin_url] do %>
+			  <%= image_tag "http://localhost:1337" + @socials[:linkedin_icon], class: "social-icon" %>&nbsp;&nbsp;<%= @socials[:linkedin_name] %>
+			<% end %><br/>
+			<%= link_to @socials[:github_url] do %>
+			  <%= image_tag "http://localhost:1337" + @socials[:github_icon], class: "social-icon" %>&nbsp;&nbsp;<%= @socials[:github_name] %>
+			<% end %>
+		</div>
+	</div>
+	<div class="bio">
+		<div class="bio-wrapper">
+			<div class="spacer"></div>
+			<div class="row">
+				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 bio-image">
+					<%= image_tag "http://localhost:1337" + @bio[:avatar] %>
+				</div>
+				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 bio-text">
+					<h2>Colin Strachan</h2>
+					<h3><%= @bio[:title] %></h3>
+					<div class="spacer"></div>
+					<p><%= @bio[:content] %></p>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
