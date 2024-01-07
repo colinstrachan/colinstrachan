@@ -1,5 +1,5 @@
 <div class="main-container">
-	<div class="hero" style="background-image: url('http://localhost:1337<%= @hero[:cover] %>');">
+	<div class="hero" style="background-image: url('<%= @hero[:cover] %>');">
 		<div class="hero-text">
 			<h1><%= @hero[:headline] %></h1>
 			<div class="spacer"></div>
@@ -12,10 +12,10 @@
 			<% end %>
 			<div class="spacer"></div>
 			<%= link_to @socials[:linkedin_url] do %>
-			  <%= image_tag "http://localhost:1337" + @socials[:linkedin_icon], class: "social-icon" %>&nbsp;&nbsp;<%= @socials[:linkedin_name] %>
+			  <%= image_tag @socials[:linkedin_icon], class: "social-icon" %>&nbsp;&nbsp;<%= @socials[:linkedin_name] %>
 			<% end %><br/>
 			<%= link_to @socials[:github_url] do %>
-			  <%= image_tag "http://localhost:1337" + @socials[:github_icon], class: "social-icon" %>&nbsp;&nbsp;<%= @socials[:github_name] %>
+			  <%= image_tag @socials[:github_icon], class: "social-icon" %>&nbsp;&nbsp;<%= @socials[:github_name] %>
 			<% end %>
 		</div>
 	</div>
@@ -24,7 +24,7 @@
 			<div class="spacer"></div>
 			<div class="row">
 				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 bio-image">
-					<%= image_tag "http://localhost:1337" + @bio[:avatar] %>
+					<%= image_tag @bio[:avatar] %>
 				</div>
 				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 bio-text">
 					<h2>Colin Strachan</h2>

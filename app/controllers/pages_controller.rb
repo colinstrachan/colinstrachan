@@ -5,24 +5,24 @@ class PagesController < ApplicationController
 
   def home
     @hero = {
-      headline: HTTParty.get('http://localhost:1337/api/homepage?populate=*')['data']['attributes']['hero']['headline'],
-      subhead: HTTParty.get('http://localhost:1337/api/homepage?populate=*')['data']['attributes']['hero']['subhead'],
-      cta: HTTParty.get('http://localhost:1337/api/homepage?populate=*')['data']['attributes']['hero']['cta'],
-      url: HTTParty.get('http://localhost:1337/api/homepage?populate=*')['data']['attributes']['hero']['url'],
-      cover: HTTParty.get('http://localhost:1337/api/homepage?populate=*&populate=hero.cover')['data']['attributes']['hero']['cover']['data']['attributes']['url']
+      headline: "Discover new ways to build winning tech products.",
+      subhead: "I'm Colin, a seasoned product marketer and developer.",
+      cta: "Colin Strachan",
+      url: "https://mailto:colin@colinstrachan.com",
+      cover: "cs-bg.jpg"
     }
     @socials = {
-      github_url: HTTParty.get('http://localhost:1337/api/socials?populate=*')['data'][0]['attributes']['url'],
-      github_icon: HTTParty.get('http://localhost:1337/api/socials?populate=*')['data'][0]['attributes']['icon']['data']['attributes']['url'],
-      github_name: HTTParty.get('http://localhost:1337/api/socials?populate=*')['data'][0]['attributes']['name'],
-      linkedin_url: HTTParty.get('http://localhost:1337/api/socials?populate=*')['data'][1]['attributes']['url'],
-      linkedin_icon: HTTParty.get('http://localhost:1337/api/socials?populate=*')['data'][1]['attributes']['icon']['data']['attributes']['url'],
-      linkedin_name: HTTParty.get('http://localhost:1337/api/socials?populate=*')['data'][1]['attributes']['name']
+      github_url: "https://www.github.com/colinstrachan",
+      github_icon: "github-white-200.png",
+      github_name: "GitHub",
+      linkedin_url: "https://www.linkedin.com/in/colinstrachan",
+      linkedin_icon: "linkedin-white-200.png",
+      linkedin_name: "LinkedIn"
     }
     @bio = {
-      title: HTTParty.get('http://localhost:1337/api/homepage?populate=*&populate=bio.avatar')['data']['attributes']['bio'][0]['title'],
-      content: HTTParty.get('http://localhost:1337/api/homepage?populate=*&populate=bio.avatar')['data']['attributes']['bio'][0]['content'],
-      avatar: HTTParty.get('http://localhost:1337/api/homepage?populate=*&populate=bio.avatar')['data']['attributes']['bio'][0]['avatar']['data']['attributes']['url']
+      title: "Fifteen years of technical marketing and hands-on dev experience.",
+      content: "After four years learning the art of storytelling in a fast-paced local newsroom, I found new passion and energy in building and marketing tech products. Most of my experience has been in technical product marketing, bringing world-leading AI, analytics and low-code developer tools to market. Over a span of ten years on Montreal's tech scene, I've helped to grow start-ups by leading product launches and driving adoption. Six years' experience as a full-stack developer has also given me strong technical literacy, and hands-on experience of building software and web applications.",
+      avatar: "colin-strachan.jpg"
     }
   end
 
