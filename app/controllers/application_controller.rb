@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
   before_action :authenticate_user!
-  # before_action :ensure_www
+  before_action :ensure_www
 
   private
 
