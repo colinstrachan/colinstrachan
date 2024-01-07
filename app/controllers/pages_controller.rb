@@ -5,7 +5,7 @@ class PagesController < ApplicationController
 
   def home
     @hero = {
-      headline: "Discover new ways to build winning tech products.",
+      headline: "Discover new ways to win with tech products.",
       subhead: "I'm Colin, a seasoned product marketer and developer.",
       cta: "Contact Me",
       url: "mailto:colin@colinstrachan.com",
@@ -20,7 +20,7 @@ class PagesController < ApplicationController
       linkedin_name: "LinkedIn"
     }
     @bio = {
-      title: "Fifteen years of technical marketing and hands-on dev experience.",
+      title: "Fifteen years of technical marketing, rooted in developer experience.",
       content: "After four years learning the art of storytelling in a fast-paced local newsroom, I found new passion and energy in building and marketing tech products. Most of my experience has been in technical product marketing, bringing world-leading AI, analytics and low-code developer tools to market. Over a span of ten years on Montreal's tech scene, I've helped to grow start-ups by leading product launches and driving adoption. Six years' experience as a full-stack developer has also given me strong technical literacy, and experience building web applications with up to 100,000 monthly active users.",
       avatar: "colin-strachan.jpg"
     }
