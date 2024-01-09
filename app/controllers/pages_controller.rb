@@ -9,7 +9,7 @@ class PagesController < ApplicationController
       subhead: "I'm Colin, a seasoned product marketer and developer.",
       cta: "Contact Me",
       url: "mailto:colin@colinstrachan.com",
-      cover: "cs-bg.jpg"
+      cover: "cs-bg-2.jpg"
     }
     @socials = {
       github_url: "https://www.github.com/colinstrachan",
