@@ -13,6 +13,9 @@
 
 body {
 	font-family: 'Manrope';
+	animation: fadeInAnimation ease 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 h1 {
@@ -52,6 +55,9 @@ a {
 	position: relative;
 	background-color: transparent;
 	height: 80px;
+	animation: fadeInAnimation ease 0.8s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .navbar-logo img {
@@ -104,6 +110,9 @@ a {
 	padding: 20vh 0vh 15vh 0vh;
 	width: 60%;
 	margin: 0 auto;
+	animation: fadeInAnimation ease 1.2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .hero-button-link {
@@ -202,3 +211,13 @@ a {
 	  font-size: 20px;
 	}
 }
+ 
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
