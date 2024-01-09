@@ -1,3 +1,6 @@
+<script>
+  AOS.init();
+</script>
 <div class="main-container">
 	<div class="hero" style="background-image: url('<%= asset_path @hero[:cover] %>');">
 		<div class="hero-text">
@@ -20,7 +23,7 @@
 		</div>
 	</div>
 	<div class="bio">
-		<div class="bio-wrapper">
+		<div class="bio-wrapper" data-aos="fade-down">
 			<div class="spacer"></div>
 			<div class="row">
 				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 bio-image">
