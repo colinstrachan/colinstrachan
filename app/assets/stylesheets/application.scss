@@ -55,7 +55,7 @@ a {
 	position: relative;
 	background-color: transparent;
 	height: 80px;
-	animation: fadeInAnimation ease 0.8s;
+	animation: fadeInAnimation ease 1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -110,7 +110,7 @@ a {
 	padding: 20vh 0vh 15vh 0vh;
 	width: 60%;
 	margin: 0 auto;
-	animation: fadeInAnimation ease 1.2s;
+	animation: fadeInAnimation ease 1.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
