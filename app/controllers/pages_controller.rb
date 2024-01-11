@@ -5,8 +5,8 @@ class PagesController < ApplicationController
 
   def home
     @hero = {
-      headline: "Discover new ways to win with tech products.",
-      subhead: "I'm Colin, a seasoned product marketer and developer.",
+      headline: "Unleash your product's full potential.",
+      subhead: "Simplify your message, find your buyers, and get the success you deserve.",
       cta: "Contact Me",
       url: "mailto:colin@colinstrachan.com",
       cover: "cs-bg-2.jpg"

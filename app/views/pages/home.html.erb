@@ -14,12 +14,18 @@
 				</div>
 			<% end %>
 			<div class="spacer"></div>
-			<%= link_to @socials[:linkedin_url] do %>
-			  <%= image_tag @socials[:linkedin_icon], class: "social-icon" %>&nbsp;&nbsp;<%= @socials[:linkedin_name] %>
-			<% end %><br/>
-			<%= link_to @socials[:github_url] do %>
-			  <%= image_tag @socials[:github_icon], class: "social-icon" %>&nbsp;&nbsp;<%= @socials[:github_name] %>
-			<% end %>
+			<div class="row">
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 col-social">
+				<%= link_to @socials[:linkedin_url] do %>
+				  <%= image_tag @socials[:linkedin_icon], class: "social-icon" %>&nbsp;&nbsp;<%= @socials[:linkedin_name] %>
+				<% end %>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 col-social">
+					<%= link_to @socials[:github_url] do %>
+					  <%= image_tag @socials[:github_icon], class: "social-icon" %>&nbsp;&nbsp;<%= @socials[:github_name] %>
+					<% end %>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="bio">

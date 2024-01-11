@@ -178,6 +178,10 @@ a {
 	font-size: 18px;
 }
 
+.col-social {
+	max-width: 25%;
+}
+
 @media only screen and (max-width: 991px) {
 	.hero-text {
 		width: 80%;
@@ -209,6 +213,14 @@ a {
 	}
 	.hero-button {
 	  font-size: 20px;
+	}
+	.col-social {
+		max-width: 49%;
+		font-size: 10px;
+	}
+	.social-icon {
+		width: 30px;
+		height: 30px;
 	}
 }
  
